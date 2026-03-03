@@ -1,0 +1,131 @@
+/* ================= BIRTHDAY GIFTS ================= */
+
+.bdayGifts {
+  padding: 22px 20px 30px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.bdayGifts__title {
+  margin: 0 0 18px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #2b2b2b;
+}
+
+.bdayGifts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.bdayGifts__item {
+  background: #efe9f7;
+  border-radius: 18px;
+  padding: 18px 18px;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  text-align: left;
+}
+
+.bdayGifts__icon {
+  width: 54px;
+  height: 54px;
+  flex: 0 0 54px;
+}
+
+.bdayGifts__text {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.25;
+  color: #2b2b2b;
+
+  /* чтобы браузер не делал дебильные переносы */
+  word-break: normal;
+  overflow-wrap: normal;
+  hyphens: none;
+}
+
+.bdayGifts__text b {
+  font-weight: 600;
+}
+
+.bdayGifts__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 52px;
+  min-width: 260px;
+  padding: 0 26px;
+
+  background: #542077;
+  color: #ffffff;
+  text-decoration: none;
+
+  border-radius: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* ======= Переключение версий текста (СПОСОБ 1) ======= */
+.t-mobile { display: none; }
+.t-desktop { display: inline; }
+
+@media (max-width: 640px) {
+  .t-desktop { display: none; }
+  .t-mobile { display: inline; }
+
+  .bdayGifts {
+    padding: 18px 20px 26px;
+  }
+
+  .bdayGifts__title {
+    font-size: 20px;
+    margin: 0 0 16px;
+  }
+
+  /* на мобиле плашки становятся “как в макете”: иконка сверху, текст по центру */
+  .bdayGifts__list {
+    gap: 14px;
+    margin-bottom: 18px;
+  }
+
+  .bdayGifts__item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+
+    padding: 18px 16px;
+    border-radius: 16px;
+  }
+
+  .bdayGifts__icon {
+    width: 56px;
+    height: 56px;
+    flex: 0 0 auto;
+  }
+
+  .bdayGifts__text {
+    font-size: 15px;
+    line-height: 1.25;
+  }
+
+  .bdayGifts__btn {
+    height: 48px;
+    min-width: 240px;
+    padding: 0 22px;
+    font-size: 16px;
+    border-radius: 12px;
+  }
+}

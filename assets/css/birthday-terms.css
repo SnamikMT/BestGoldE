@@ -1,0 +1,65 @@
+/* ================= BIRTHDAY TERMS ================= */
+
+.bdayTerms {
+  background: #ffffff;
+  color: #61584F;
+
+  /* ✅ отступы от краёв */
+  padding: 0 20px 24px;
+  box-sizing: border-box;
+}
+
+/* ✅ контейнер ВСЕГДА центрируется */
+.bdayTerms__box {
+  max-width: 800px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* ✅ если в макете текстовая колонка не на всю ширину — ограничим */
+.bdayTerms__text {
+  max-width: 720px;     /* подкрути 680–760 под “как в фигме” */
+  margin: 0;            /* слева ровно, но НЕ к краю из-за padding секции */
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.35;
+  color: #61584F;
+
+  word-break: normal;
+  overflow-wrap: normal;
+  hyphens: none;
+}
+
+.bdayTerms__title {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.2;
+  color: #61584F;
+  margin-bottom: 6px;
+}
+
+/* ✅ ВАЖНО: делаем переключаемые спаны блочными */
+.bdayTerms .t-desktop,
+.bdayTerms .t-mobile {
+  display: block;
+}
+
+/* по умолчанию desktop */
+.bdayTerms .t-mobile { display: none; }
+.bdayTerms .t-desktop { display: block; }
+
+@media (max-width: 640px) {
+  .bdayTerms {
+    padding: 0 10px 20px; /* мобила 10 */
+  }
+
+  .bdayTerms__box {
+    max-width: 360px;   /* чтобы переносы были как на макете */
+    margin: 0 auto;
+  }
+
+  .bdayTerms .t-desktop { display: none; }
+  .bdayTerms .t-mobile { display: block; }
+}

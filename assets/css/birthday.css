@@ -1,0 +1,56 @@
+/* ================= BIRTHDAY HERO ================= */
+
+.bdayHero {
+  padding: 22px 20px 28px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.bdayHero__title {
+    margin: 0 0 10px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.15;
+    color: #373431;
+}
+
+.bdayHero__subtitle {
+  margin: 0 0 18px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.35;
+  color: rgba(43, 43, 43, 0.8);
+}
+
+.bdayHero__banner {
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.bdayHero__img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 640px) {
+  .bdayHero {
+    padding: 18px 20px 22px;
+  }
+
+  .bdayHero__title {
+    font-size: 20px;
+  }
+
+  .bdayHero__subtitle {
+    font-size: 13px;
+    margin-bottom: 14px;
+  }
+
+  .bdayHero__banner {
+    border-radius: 20px;
+  }
+}

@@ -132,6 +132,10 @@
   padding-top: 8px;
 }
 
+.products__title.three {
+  color: #373431;
+}
+
 
 /* на мобилке — показываем */
 @media (max-width: 700px) {
