@@ -137,6 +137,7 @@
   .gift__card {
     padding: 22px 18px 26px;
     border-radius: 28px;
+    padding-bottom: 0px;
   }
 
   /* левая часть становится 100% */
