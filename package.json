@@ -1,0 +1,16 @@
+{
+  "name": "best-gold-email",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "posthtml": "^0.16.7",
+    "posthtml-include": "^2.0.1"
+  }
+}

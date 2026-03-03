@@ -1,0 +1,202 @@
+/* ================= PRODUCTS GRID ================= */
+
+.products {
+  padding: 28px 20px 36px;
+  background: #ffffff;
+}
+
+.products__title {
+  margin: 0 0 28px;
+  text-align: center;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.1;
+  color: #2b2b2b;
+}
+
+.products__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Card */
+.pCard {
+      text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.pCard__media {
+  position: relative;
+  height: 240px;            /* подгоняется под твои png */
+  display: grid;
+  place-items: center;
+}
+
+.pCard__img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.pCard__badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  background: #f3c56b;
+  border-radius: 8px;
+  padding: 6px 10px;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  color: #1a1a1a;
+}
+
+.pCard__name {
+  margin: 18px 0 14px;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.15;
+  color: #2b2b2b;
+}
+
+.pCard__price {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.pCard__now {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #1a1a1a;
+}
+
+.pCard__old {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(26, 26, 26, 0.45);
+  text-decoration: line-through;
+}
+
+.pCard__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 48px;
+  min-width: 160px;
+  padding: 0 22px;
+
+  background: #542077;
+  color: #ffffff;
+  text-decoration: none;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+
+  border-radius: 14px;
+}
+
+/* по умолчанию (десктоп) — скрыто */
+.pCard--mOnly {
+  display: none;
+}
+
+/* на мобилке — показываем */
+@media (max-width: 700px) {
+  .pCard--mOnly {
+    display: flex;
+  }
+}
+
+/* ================= TABLET / MOBILE ================= */
+@media (max-width: 700px) {
+  .products {
+    padding: 22px 20px 28px;
+  }
+
+  .products__title {
+    font-size: 22px;
+    line-height: 1.15;
+    margin-bottom: 18px;
+  }
+
+  .products__grid {
+    grid-template-columns: repeat(2, 1fr); /* ✅ две колонки */
+    gap: 22px 18px; /* row / col */
+  }
+
+  .pCard__media {
+    height: 150px; /* ✅ компактнее как на скрине */
+  }
+
+  .pCard__img {
+    height: 150px;
+    }
+
+  .pCard__badge {
+    top: 6px;
+    right: 6px;
+    padding: 5px 8px;
+    font-size: 14px;
+    border-radius: 8px;
+  }
+
+  .pCard__name {
+    margin: 12px 0 10px;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .pCard__price {
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .pCard__now {
+    font-size: 18px;
+  }
+
+  .pCard__old {
+    font-size: 14px;
+  }
+
+  .pCard__btn {
+    height: 40px;
+    min-width: 120px;
+    padding: 0 14px;
+    font-size: 16px;
+    border-radius: 12px;
+  }
+}
+
+/* на совсем узких — можно оставить 2 колонки, но чуть ужать */
+@media (max-width: 360px) {
+  .products__grid {
+    gap: 18px 12px;
+  }
+
+  .pCard__media {
+    height: 140px;
+  }
+
+  .pCard__btn {
+    min-width: 110px;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,226 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f3f3f3;
+}
+
+.email-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.email-container {
+  width: 100%;
+  max-width: 800px;
+  background: #ffffff;
+}
+
+/* HEADER */
+.header {
+  background: #542077;
+  height: 84px;
+  padding: 20px 0 20px 20px; /* top right bottom left */
+  display: flex;
+  align-items: center;
+}
+
+.header__inner {
+  text-align: left;
+}
+
+.header__logo {
+  display: block;
+}
+
+.header__subtitle {
+  margin-top: 6px;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+
+  color: #ffffff;
+}
+
+/* MENU */
+.menu {
+  background: #ffffff;
+  text-align: center;
+  padding: 20px 0; /* сверху/снизу по 20 */
+}
+
+.menu__item {
+  display: inline-block;
+  margin: 0 40px; /* можно подкрутить под макет */
+
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+
+  color: #542077;
+  text-decoration: none;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+  background: #542077;
+  padding: 24px 20px; /* сверху/снизу 24, по бокам 20 */
+  color: #ffffff;
+  padding-bottom: 36px;
+}
+
+.footer__inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* контакты */
+.footer__contacts {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.footer__title {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.footer__subtitle {
+  margin-top: 6px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* разделитель */
+.footer__divider {
+  height: 1px;
+  background: rgba(255,255,255,0.3);
+  margin: 24px 0;
+}
+
+/* ссылки */
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.footer__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; /* вот это важно — прижимаем к низу */
+  margin-bottom: 24px;
+}
+
+/* соцсети */
+.footer__socials {
+  display: flex;
+  gap: 16px;
+}
+
+.footer__socials img {
+  width: 44px;
+  height: 44px;
+  display: block;
+}
+
+/* отписка */
+.footer__unsubscribe {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.4;
+  max-width: 560px;
+}
+
+.footer__unsubscribe a {
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+/* ================= FOOTER MOBILE ================= */
+@media (max-width: 700px) {
+  .footer {
+    padding: 24px 20px 36px;
+  }
+
+  /* контакты в колонку */
+  .footer__contacts {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  /* делаем email как на макете — чуть крупнее/выразительнее */
+  .footer__title {
+    font-size: 22px;
+    line-height: 1.15;
+  }
+
+  .footer__subtitle {
+    font-size: 15px;
+  }
+
+  /* основной блок: ссылки + соцсети теперь колонкой */
+  .footer__main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+
+  /* соцсети слева под ссылками */
+  .footer__socials {
+    justify-content: flex-start;
+  }
+
+  .footer__socials img {
+    width: 56px;   /* как на макете выглядит крупнее */
+    height: 56px;
+  }
+
+  .footer__links a {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .footer__unsubscribe {
+    font-size: 16px;
+    line-height: 1.35;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .menu__item{
+    margin: 0 20px;
+  }
+}

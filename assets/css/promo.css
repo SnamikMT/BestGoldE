@@ -1,0 +1,46 @@
+/* ================= PROMO ================= */
+
+.promo {
+  padding: 22px 20px 28px;
+  background: #ffffff;
+}
+
+.promo__title {
+  margin: 0 0 18px;
+  text-align: center;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #2b2b2b;
+}
+
+.promo__banner {
+  display: block;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.promo__img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+  .promo {
+    padding: 18px 20px 22px;
+  }
+
+  .promo__title {
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+
+  .promo__banner {
+    border-radius: 20px;
+  }
+}
