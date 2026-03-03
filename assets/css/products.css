@@ -71,7 +71,7 @@
 }
 
 .pCard__price {
-  display: inline-flex;
+  /* display: inline-flex; */
   align-items: baseline;
   gap: 10px;
   margin-bottom: 16px;
@@ -116,6 +116,22 @@
 .pCard--mOnly {
   display: none;
 }
+
+.product__text {
+  text-align: center;
+  color: #373431;
+}
+
+.products__title2 {
+  margin-bottom: 4px;
+  text-align: center;
+  color: #373431;
+}
+
+.products.two {
+  padding-top: 8px;
+}
+
 
 /* на мобилке — показываем */
 @media (max-width: 700px) {

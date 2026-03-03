@@ -1,0 +1,111 @@
+/* ================= CART SUPPORT ================= */
+
+.cartSupport {
+  padding: 28px 20px 36px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.cartSupport__title {
+  margin: 0 0 22px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  color: #2b2b2b;
+}
+
+/* карточки преимуществ */
+.cartSupport__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 34px;
+}
+
+.cartSupport__item {
+  background: #e5dced;
+  border-radius: 20px;
+  padding: 18px 16px;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-align: left;
+}
+
+.cartSupport__icon {
+  width: 60px;
+  height: 60px;
+}
+
+.cartSupport__text {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+/* блок помощи */
+.cartSupport__helpTitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.cartSupport__helpText {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+.cartSupport__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 44px;
+  padding: 0 60px;
+
+  background: #542077;
+  color: #ffffff;
+  text-decoration: none;
+
+  border-radius: 12px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+
+  margin-bottom: 20px;
+}
+
+.cartSupport__phone {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+.cartSupport__phone a {
+  color: #2b2b2b;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 640px) {
+  .cartSupport__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cartSupport__item {
+    justify-content: flex-start;
+  }
+
+  .cartSupport__title {
+    font-size: 20px;
+  }
+
+  .cartSupport__helpTitle {
+    font-size: 20px;
+  }
+}
